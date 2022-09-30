@@ -4,12 +4,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #main{
-    width: 500px;
+    width: 800px;
     height: 500px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     position:relative;
-    top:50px;
+    top:10px;
+    bottom:35px;
     border-radius:15px;
     overflow:hidden;
     transition: box-shadow .5s;
@@ -31,27 +32,95 @@ body{
 }
 
 #mts{
+
     width: 100%;
     height: 100%;
-        object-fit: cover; 
+    object-fit: cover;
+     border-radius:15px;
+
 }
 
-.title-text-container{ 
-  
-}
+
 .photo-overlay:hover h1{
     transform:translateX(0px);
 }
 #education{
+    position:relative;
+    margin-top:20px;
+    border-radius:15px;
+    overflow:hidden;
+    transition: box-shadow .5s;
 
 }
+
+#education:hover{
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.55); 
+    transition: box-shadow .5s;
+}
+
+
+
 #work{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    margin-top: 15px;
 
+    transition: box-shadow .5s;
 }
+#work:hover{
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.55); 
+    transition: box-shadow .5s;
+}
+
 h1{
   position:absolute;
   color:black;
-  top:0;
-  padding-top: 15%;
+  top:5px;
+  padding-top: 5%;
+  padding-left: 250px;
      
+}
+.uni{
+    height: 500px;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius:15px;
+}
+.oly{
+    height: 500px;
+    width: auto;
+    border-radius:15px;
+}
+h2{
+    position:absolute;
+    color:black; 
+    top:5px;
+  padding-top: 5%;
+  padding-left: 120px;
+}
+h3{
+    position:absolute;
+    color:black; 
+    top:5px;
+  padding-top: 5%;
+  padding-left: 120px;  
+}
+.emoji{
+    position:absolute;
+    width: 100px;
+    height: 50px;
+       top:0;
+    right: 20px;
+    cursor:pointer;
+    transform:translateX(120px) ;
+    transition: transform 1s;
+}
+.emj{
+
+}
+#main:hover .emoji{
+    transform:translateX(0px);
 }
